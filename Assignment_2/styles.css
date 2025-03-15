@@ -1,0 +1,602 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #eef8ec;
+  color: #1a3c1c;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a3c1c;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1a3c1c;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login {
+  text-decoration: none;
+  color: #1a3c1c;
+  font-weight: 600;
+}
+
+.join {
+  text-decoration: none;
+  background: #4caf50;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+}
+
+/* Hero Left Side Content */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  color: #4a704a;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.btn-green {
+  background: #4caf50;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-green:hover {
+  background: #3e8e41;
+}
+
+.btn-outline {
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #4caf50;
+  color: white;
+}
+
+/* Right Side: Phone Images */
+.hero-image {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 140px;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.phone1 {
+  transform: rotate(-15deg);
+  left: -50px;
+  z-index: 1;
+}
+
+.phone2 {
+  transform: rotate(0deg);
+  z-index: 2;
+}
+
+.phone3 {
+  transform: rotate(15deg);
+  right: -50px;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .phone {
+    width: 100px;
+  }
+}
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #eef8ec;
+  color: #1a3c1c;
+  text-align: center;
+}
+
+/* Achieve Your Goals Section */
+.achieve-goals {
+  padding: 60px 10%;
+}
+
+.achieve-goals h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 18px;
+  color: #4a704a;
+  margin-top: 10px;
+}
+
+.goal-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.goal-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 30%;
+}
+
+.goal-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.goal-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.goal-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4a704a;
+}
+
+/* Transform Your Fitness Experience Section */
+.transform-experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 50%;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.transform-content {
+  max-width: 45%;
+  text-align: left;
+}
+
+.transform-content h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.transform-content p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #4a704a;
+  line-height: 1.6;
+}
+
+.btn-green {
+  display: inline-block;
+  margin-top: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-green:hover {
+  background: #3e8e41;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .goal-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goal-card {
+    max-width: 80%;
+  }
+
+  .transform-experience {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-grid {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transform-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-image: url("background.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Signup Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+/* Signup Box */
+.signup-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.signup-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #4a704a;
+  margin-bottom: 15px;
+}
+
+/* Google Button */
+.google-btn {
+  background: #eef8ec;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.google-btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Divider */
+.divider {
+  margin: 15px 0;
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Form Styles */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin: 5px 0;
+  color: #4a704a;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Signup Button */
+.signup-btn {
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  background: #3e8e41;
+}
+
+/* Terms */
+.terms {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.terms a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+  .signup-box {
+    width: 90%;
+  }
+}
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f2fdf2;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #204020;
+}
+
+.contact-section p {
+  font-size: 16px;
+  color: #4a704a;
+  margin-bottom: 20px;
+}
+
+/* Contact Input Box */
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.contact-box button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact-box button:hover {
+  background: #3e8e41;
+}
+
+/* Footer */
+.footer {
+  background: #1b3721;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  max-width: 300px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links div {
+  min-width: 150px;
+}
+
+.footer-links h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
